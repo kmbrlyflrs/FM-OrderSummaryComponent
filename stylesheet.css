@@ -1,0 +1,134 @@
+body{
+    background-image: url('images/pattern-background-desktop.svg');
+    background-color: hsl(225, 100%, 98%);
+}
+
+h1, h3, p, a, button,span{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1{
+    font-weight: 900;
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row, .btns, .plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-----------------------------*/
+
+.card img{
+    width:100%;
+    height:auto;
+    object-fit: contain;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.sizing{
+    width:80%;
+    margin-left:10%  
+}
+
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.plan-col{
+    display: flex;
+    align-items: center;
+}
+
+.plan img{
+    height: 50px;
+    width: auto;
+}
+
+
+.plan-group{
+    margin-right: 70px;
+    margin-left: 15px;
+
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+/*-------------------------*/
+
+.plan a{
+    color:hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.plan a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.purple-btn{
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    border-style: none;
+    border-radius: 15px;
+    font-weight: 700;
+    padding:20px;
+    width: 100%;
+    display: block;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.purple-btn:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    color:hsl(224, 23%, 55%);
+    border-style: none;
+    font-weight: 700;
+    padding:20px;
+}
+
+.cancel-btn:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+/*mobile responsiveness*/
+@media only screen and (max-width : 768px){
+    .card{
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        height: auto;
+        width: 90vw;
+        margin:10vh;
+    }
+}
+
+/*desktop responsiveness*/
+@media only screen and (min-width : 768px){
+    .card{
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        height: auto;
+        width: 50vw;
+        margin:5vw;
+    }
+}
